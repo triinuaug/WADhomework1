@@ -9,8 +9,57 @@ body {
 	
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	padding: 25px;
+	padding-right: 95px;
+	
+	border-radius: 5px;
+}
+
+.logoContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex: 1;
+}
+
+.logoContainer img {
+	width: 70px;
+	height: 70px;
+	transform: rotate(-10deg);
+}
+
+.loginContainer {
+	flex: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 30px;
+}
+
+input {
+	height: 30px;
+	margin-top: 10px;
+	padding-left: 5px;
+}
+
+a {
+	margin-top: 15px;
+}
+
+#login {
+	width: 80px;
+	height: 30px;
+	color: #ffffff;
+	background-color: #3e40ea;
+	border-radius: 5px;
+	border: 0px;
+	box-shadow: 3px 3px 10px #000000;
+}
+
+a:hover {
+	transform: scale(1.1);
 }
