@@ -3,9 +3,11 @@ i{
 }
 nav{
     display: flex;
-    width: 100%;
+    width: auto;
+    padding: 10px 50px;
     background-color: #ffffff;
     text-align: center;
+    justify-content: space-between;
 }
 .icon {
     width: 4vw;
@@ -14,5 +16,137 @@ nav{
     margin: 0;
     width: 100%;
     height: 30px;
+    display: flex;
+    justify-content: center;
     padding: 20px 5px 0px 5px;
+}
+
+.search-container input {
+    box-sizing: border-box;
+    float: left;
+    padding: 3px 20px;
+    width: 30%;
+   
+}
+
+
+.search-container button{
+    background: #0D579B;
+    border: 0;
+    padding: 5px 20px;
+    float: left;
+    color: white;   
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.search-container ~ div i{
+    border-radius: 100%;
+    padding: 10px;
+    background: gray;
+    font-size: 50px;
+    color: white;
+}
+
+
+/* Whole section */
+#main{
+    text-align:center;
+    padding: 0 25%;
+}
+
+/* Centered container that holds posts */
+.posts-container{
+    display: flex;
+    background: #ffffff;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.post{
+    margin: 20px 0;
+    box-shadow: 4px 4px 8px 4px rgba(34, 25, 25, 0.4);
+    
+}
+
+.post:hover {
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.5);
+  }
+
+.post img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.post >div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.post >div>i{
+    border-radius: 100%;
+    padding: 10px;
+    background: gray;
+    font-size: 50px;
+    color: white;
+}
+
+.post-description{
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: left;
+    display: block;
+    margin-bottom: 50px;
+    
+}
+
+.post > div >i + p {
+    color: #8C8A8C;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.btn-like{
+    background: #0D579B;
+    color: white;
+    font-size: 20px;
+    padding: 3px 15px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    right: 90%;
+}
+
+/* Making a little reponsive */
+
+@media only screen and (max-width: 600px) {
+    .btn-like {
+    right: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+    .btn-like {
+    right: 95%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .btn-like {
+    right: 85%;
+    }
+}
+
+
+@media only screen and (max-width:1540px) {
+    .btn-like {
+    right: 90%;
+    }
 }
