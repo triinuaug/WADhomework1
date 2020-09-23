@@ -4,54 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <title>indexHTML</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!For Like icons>
-	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script><!For user icons.>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--For Like icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--For user icons.-->
     <link rel="stylesheet" href="res/css/generalStyle.css">
     <link rel="stylesheet" href="res/css/indexStyle.css">
 </head>
+
 <body>
-<header>
-    <nav>
-        <div>
-            <img class="icon" src="res/images/postit.png" alt="PostIt Icon">
+    <header>
+        <nav>
+            <div>
+                <img class="icon" src="res/images/postit.png" alt="PostIt Icon">
+            </div>
+            <div class="search-container">
+                <input type="text">
+                <button>Search</button>
+            </div>
+            <div>
+                <i class="fas fa-user-alt"></i>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <div class="posts-container">
+            <div class="post">
+                <div>
+                    <i class="fas fa-user-alt"></i>
+                    <p> Sep 18, 2020 17:18</p>
+                </div>
+                <img src="res/images/Rainy_day.JPG" alt="Some kind of old videogame screenshot">
+                <div class="post-content">
+                    <p class="post-description">I think it's going to rain</p>
+                    <button class="btn btn-like"><i class="fa fa-thumbs-up"></i></button>
+                </div>
+            </div>
+            <div class="post">
+                <div>
+                    <i class="fas fa-user-alt"></i>
+                    <p> Sep 18, 2020 17:18</p>
+                </div>
+                <div class="post-content">
+                    <p class="post-description">Which weighs more, a pound of feathers or a pound of bricks?</p>
+                    <button class="btn btn-like"><i class="fa fa-thumbs-up"></i></button>
+                </div>
+            </div>
+            <div class="post">
+                <div>
+                    <i class="fas fa-user-alt"></i>
+                    <p> Sep 18, 2020 17:18</p>
+                </div>
+                <img src="res/images/Arkham_Knight.JPG" alt="Batman: Arkham Knight sreenshot">
+                <div class="post-content">
+                    <p class="post-description">Felt cute, might delete later</p><br>
+                    <button class="btn btn-like"><i class="fa fa-thumbs-up"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="search-container">
-            <input type="text">
-            <button>Search</button>
-        </div>
-        <div>
-            <i class="fas fa-user-alt"></i>
-        </div>
-    </nav>
-</header>
-<section>
-    <div>
-        <div>
-            <i class="fas fa-user-alt"></i>
-            <p class="Timestamp"> Sep 18, 2020 17:18</p>
-        </div>
-        <img src="res/images/Rainy_day.JPG" alt="Some kind of old videogame screenshot">
-        <p>I think it's going to rain</p>
-        <button class="btn"><i class="fa fa-thumbs-up"></i></button>
-    </div>
-    <div>
-        <div>
-            <i class="fas fa-user-alt"></i>
-            <p class="Timestamp"> Sep 18, 2020 17:18</p>
-        </div>
-        <p>Which weighs more, a pound of feathers or a pound of bricks?</p>
-        <button class="btn"><i class="fa fa-thumbs-up"></i></button>
-    </div>
-    <div>
-        <div>
-            <i class="fas fa-user-alt"></i>
-            <p class="Timestamp"> Sep 18, 2020 17:18</p>
-        </div>
-        <img src="res/images/Arkham_Knight.JPG" alt="Batman: Arkham Knight sreenshot">
-        <p class="comment">Felt cute, might delete later</p>
-        <button class="btn"><i class="fa fa-thumbs-up"></i></button>
-    </div>
-</section>
+    </section>
 </body>
+
 </html>
