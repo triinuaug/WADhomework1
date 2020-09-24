@@ -5,6 +5,8 @@ body {
 	
 }
 
+
+/*The whole container*/
 .contentContainer {
 	background-color: #ffffff;
 	
@@ -19,10 +21,12 @@ body {
 	border-radius: 5px;
 }
 
+
+/*Logo*/
 .logoContainer {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	width: 70px;
+	justify-content: flex-end;
 	flex: 1;
 }
 
@@ -32,6 +36,8 @@ body {
 	transform: rotate(-10deg);
 }
 
+
+/*Login information*/
 .loginContainer {
 	flex: 3;
 	display: flex;
@@ -39,6 +45,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding-top: 30px;
+	text-align: center;
 }
 
 input {
@@ -55,7 +62,7 @@ a {
 	width: 80px;
 	height: 30px;
 	color: #ffffff;
-	background-color: #3e40ea;
+	background-color: #0D579B;
 	border-radius: 5px;
 	border: 0px;
 	box-shadow: 3px 3px 10px #000000;
@@ -63,4 +70,10 @@ a {
 
 a:hover {
 	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 420px) {
+    .loginContainer > h3 {
+		width: 120px;
+	}
 }
